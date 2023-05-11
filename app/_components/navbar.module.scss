@@ -1,0 +1,48 @@
+@use "../_styles/global";
+
+.nav {
+  @include global.selection;
+
+  color: global.$color-base;
+  position: sticky;
+  z-index: 999;
+
+  ul {
+    font-weight: bold;
+    padding: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    gap: 12rem;
+
+    li {
+      font-size: 1.6rem;
+
+      a:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
+.logo {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  a &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+}

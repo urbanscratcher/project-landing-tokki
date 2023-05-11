@@ -1,0 +1,59 @@
+$color-base: #6c542f;
+$color-base-tint-1: #c1b19c;
+$color-base-tint-2: #d1cabb;
+$color-base-tint-3: #e0dedc;
+$color-base-dark: #4e4231;
+$color-gray: #857c6e;
+$color-primary: #f45207;
+$color-primary-dark: #dc4a06;
+$color-complementary: #2f476c;
+$color-selection-text: #b8702d;
+
+@mixin container {
+  width: 125rem;
+  margin: 0 auto;
+}
+
+@mixin flex-col-center($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: $gap;
+}
+
+@mixin flex-row-center($gap) {
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin selection {
+  * {
+    &::selection {
+      color: $color-primary;
+    }
+  }
+}
+
+@mixin section-heading {
+  h1 {
+    width: 60%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 5.6rem;
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+  }
+
+  p {
+    font-size: 2rem;
+    color: $color-gray;
+    margin-bottom: 1.7rem;
+  }
+}
+
+@mixin image {
+  width: 100%;
+  height: auto;
+}

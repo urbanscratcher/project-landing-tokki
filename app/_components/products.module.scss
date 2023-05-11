@@ -1,0 +1,10 @@
+@use "../_styles/global";
+
+.products {
+  @include global.section-heading;
+  @include global.flex-col-center(3rem);
+
+  ul {
+    @include global.flex-col-center(1rem);
+  }
+}

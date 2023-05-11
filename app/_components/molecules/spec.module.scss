@@ -1,0 +1,37 @@
+@use "../../_styles/global";
+
+.spec {
+  @include global.flex-row-center(4rem);
+  width: inherit;
+
+  section {
+    width: 100%;
+    @include global.flex-col-center(4rem);
+
+    h1 {
+      white-space: nowrap;
+      display: block;
+      color: global.$color-base;
+      font-weight: bold;
+      font-size: 5.6rem;
+      letter-spacing: -1.2px;
+      line-height: 1.15;
+      text-align: center;
+    }
+
+    ul {
+      @include global.flex-col-center(2.5rem);
+      padding-left: 5rem;
+
+      color: global.$color-base;
+      font-size: 1.8rem;
+      line-height: 1.7;
+      margin: 0;
+
+      li {
+        padding: 1rem 0.3rem;
+        text-align: left;
+      }
+    }
+  }
+}

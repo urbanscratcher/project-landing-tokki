@@ -1,0 +1,55 @@
+@use "../_styles/global";
+
+.hero {
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 10;
+    transform: translateY(-60%);
+
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    gap: 1.5rem;
+
+    h1 {
+      width: 100%;
+      font-size: 6.5rem;
+      font-weight: bold;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      letter-spacing: -1.5px;
+    }
+
+    p {
+      width: 65%;
+      color: global.$color-gray;
+      font-size: 1.8rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    div {
+      background-color: global.$color-primary;
+      top: 100%;
+      left: 0%;
+    }
+  }
+
+  figure {
+    margin-left: auto;
+    width: 45%;
+  }
+}
+
+.image {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  filter: contrast(103%) saturate(105%);
+}

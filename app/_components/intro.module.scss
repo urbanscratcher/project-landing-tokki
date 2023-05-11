@@ -1,0 +1,27 @@
+@use "../_styles/global";
+
+.intro {
+  @include global.flex-col-center(3rem);
+  @include global.section-heading;
+}
+
+.video {
+  width: 85%;
+  margin: 0 auto;
+
+  div {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 3rem;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

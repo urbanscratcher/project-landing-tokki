@@ -1,0 +1,64 @@
+@use "../_styles/global";
+
+.awards {
+  h1 {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    display: inline-flex;
+
+    li {
+      width: 7rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        filter: contrast(0.9) saturate(0.6) drop-shadow(3px 1px 2px #a0968e2e);
+      }
+
+      &:first-child {
+        position: absolute;
+        transform: translateX(-210%);
+        z-index: 10;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        transform: translateX(-140%);
+        z-index: 20;
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        transform: translateX(-70%);
+        z-index: 30;
+      }
+
+      &:nth-child(4) {
+        position: relative;
+        z-index: 40;
+      }
+
+      &:nth-child(5) {
+        position: absolute;
+        transform: translateX(70%);
+        z-index: 50;
+      }
+
+      &:nth-child(6) {
+        position: absolute;
+        transform: translateX(140%);
+        z-index: 60;
+      }
+
+      &:nth-child(7) {
+        position: absolute;
+        transform: translateX(210%);
+        z-index: 70;
+      }
+    }
+  }
+}

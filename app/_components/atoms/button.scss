@@ -1,0 +1,45 @@
+@use "../../_styles/global";
+
+@mixin outline($color) {
+  border: solid 0.25rem $color;
+  background-color: #fff;
+  color: $color;
+
+  &:hover {
+    background-color: $color;
+    color: #fff;
+  }
+}
+
+.button {
+  font-weight: semi-bold;
+  color: #fff;
+  padding: 1.7rem 3rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  background-color: global.$color-primary;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  background-color: global.$color-base;
+
+  &:hover {
+    background-color: global.$color-base-dark;
+  }
+
+  &.outline {
+    @include outline(global.$color-base);
+  }
+
+  &.primary {
+    background-color: global.$color-primary;
+
+    &:hover {
+      background-color: global.$color-primary;
+    }
+
+    &.outline {
+      @include outline(global.$color-primary);
+    }
+  }
+}

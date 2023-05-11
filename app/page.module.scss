@@ -1,0 +1,8 @@
+@use "./_styles/global.scss";
+
+.home {
+  color: global.$color-base;
+  @include global.container;
+  @include global.flex-col-center(15rem);
+  @include global.selection;
+}

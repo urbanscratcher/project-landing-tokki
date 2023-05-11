@@ -1,0 +1,46 @@
+@use "../../_styles/global";
+
+.hidden {
+  display: none;
+}
+
+.modal--back {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(global.$color-gray, 0.1);
+}
+
+.modal--position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal--container {
+  border: 0.1rem solid rgba(global.$color-gray, 0.1);
+  box-shadow: 0 3rem 3rem rgba(global.$color-gray, 0.1);
+  border-radius: 2rem;
+  padding: 6rem 6rem;
+  background-color: #ffffffe4;
+  backdrop-filter: blur(0.7rem);
+  overflow: hidden;
+  @include global.flex-row-center(0);
+  justify-content: space-between;
+}
+
+.close {
+  justify-content: end;
+  font-size: 4rem;
+  color: global.$color-base;
+  transform: translate(4rem, -4rem);
+
+  &:hover {
+    border-radius: 5rem;
+    color: global.$color-base-tint-1;
+  }
+}

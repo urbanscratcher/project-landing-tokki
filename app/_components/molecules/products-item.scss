@@ -1,0 +1,61 @@
+@use "../../_styles/global";
+
+.products-item {
+  @include global.flex-row-center(1rem);
+  height: 50rem;
+
+  &.products-item-reversed {
+    flex-direction: row-reverse;
+    div {
+      text-align: right;
+    }
+  }
+
+  figure {
+    width: 50%;
+    position: relative;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 45%;
+      top: 92%;
+      z-index: -1;
+      width: 20rem;
+      height: 2rem;
+      filter: blur(1.3rem);
+      border-radius: 20rem;
+
+      background: linear-gradient(
+        to left,
+        rgba(global.$color-base-tint-1, 0.1),
+        rgba(global.$color-base-dark, 0.5)
+      );
+    }
+  }
+
+  div {
+    @include global.flex-col-center(2rem);
+    width: 50%;
+    text-align: left;
+
+    h2 {
+      font-size: 3.6rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    a {
+    }
+  }
+}
