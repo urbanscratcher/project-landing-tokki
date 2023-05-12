@@ -1,0 +1,27 @@
+@use "../_styles/global";
+
+.cta {
+  @include global.selection;
+  @include global.flex-col-center(3rem);
+  padding: 7rem 0;
+  background-color: global.$color-base-dark;
+  color: #fff;
+
+  header {
+    font-weight: 800;
+    font-size: 6.4rem;
+  }
+
+  p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: global.$color-base-tint-3;
+  }
+
+  form {
+    @include global.flex-row-center(1rem);
+    justify-content: center;
+  }
+}

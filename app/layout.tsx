@@ -2,6 +2,8 @@ import { Plus_Jakarta_Sans as Jakarta } from "next/font/google";
 import DetailModal from "./_components/DetailModal";
 import Navbar from "./_components/Navbar";
 import "./globals.css";
+import Cta from "./_components/Cta";
+import Footer from "./_components/Footer";
 
 const jakarta = Jakarta({ subsets: ["latin"] });
 
@@ -21,7 +23,8 @@ export default function RootLayout({
         <DetailModal />
         <Navbar />
         {children}
-        <div>Shared-Footer</div>
+        <Cta />
+        <Footer />
       </body>
     </html>
   );

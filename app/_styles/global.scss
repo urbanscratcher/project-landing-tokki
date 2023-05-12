@@ -14,17 +14,30 @@ $color-selection-text: #b8702d;
   margin: 0 auto;
 }
 
-@mixin flex-col-center($gap) {
+@mixin flex-col($gap) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   gap: $gap;
+}
+
+@mixin flex-col-center($gap) {
+  @include flex-col($gap);
+  text-align: center;
+}
+
+@mixin flex-col-left($gap) {
+  @include flex-col($gap);
+  text-align: left;
+}
+
+@mixin flex-col-right($gap) {
+  @include flex-col($gap);
+  text-align: right;
 }
 
 @mixin flex-row-center($gap) {
   display: flex;
-  justify-content: center;
   gap: $gap;
 }
 

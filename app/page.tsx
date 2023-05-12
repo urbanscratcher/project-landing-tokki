@@ -22,8 +22,6 @@ export default function Home() {
       <About />
       <Focus />
       <Faqs />
-      <Cta />
-      <Footer />
     </main>
   );
 }

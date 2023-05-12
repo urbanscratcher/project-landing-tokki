@@ -1,0 +1,42 @@
+@use "../_styles/global";
+
+.focus {
+  @include global.section-heading;
+  @include global.flex-col-center(3rem);
+
+  ul {
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+
+    column-gap: 4rem;
+    row-gap: 4rem;
+
+    li {
+      @include global.flex-col-center(1rem);
+      justify-content: flex-start;
+      background-color: rgba(global.$color-base, 0.1);
+      border-radius: 2rem;
+      padding: 3.5rem;
+
+      figure {
+        font-size: 3.5rem;
+      }
+
+      strong {
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 1.6;
+        // padding: 0 3rem;
+        margin: 0;
+      }
+    }
+  }
+}

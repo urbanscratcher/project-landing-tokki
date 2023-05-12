@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Awards = () => {
   return (
-    <div className={styles.awards}>
+    <section className={styles.awards}>
       <h1>Awarded by</h1>
       <ul>
         <li>
@@ -35,7 +35,7 @@ const Awards = () => {
           <Image src={awards7} sizes="100vh" alt="abc" />
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
