@@ -2,7 +2,7 @@ import styles from "./intro.module.scss";
 
 const Intro = () => {
   return (
-    <section className={styles.intro}>
+    <section id="intro" className={styles.intro}>
       <h1>The Most Unique Korean Traditional Spirits</h1>
       <p>
         We want to stand shoulder to shoulder with other spirits around the

@@ -4,32 +4,25 @@
   @include global.flex-row-center(4rem);
   justify-content: left;
 
-  header {
-    width: 55%;
+  & > header {
+    width: 45%;
     @include global.section-heading;
     @include global.flex-col-left(3rem);
+    justify-content: flex-start;
 
-    h1 {
+    & > h1 {
       width: 100%;
+
+      &:before {
+        left: 0;
+        margin: 0 2rem;
+      }
     }
   }
 
-  ul {
-    width: 45%;
+  & > ul {
+    width: 55%;
     @include global.flex-col-left(0);
-
-    li {
-      @include global.flex-row-center(0);
-      justify-content: space-between;
-      font-size: 2rem;
-      font-weight: 500;
-      padding: 2rem;
-
-      border-bottom: 1px solid global.$color-base-tint-3;
-
-      &:last-child {
-        border-bottom: none;
-      }
-    }
+    justify-content: flex-start;
   }
 }

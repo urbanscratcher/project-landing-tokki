@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
       <h1>About Team Tokki</h1>
       <p>
         Tokki Soju started in Brooklyn, grew up in South Korea, and will expand
-        globally starting in 2023.
+        globally starting in 2023
       </p>
       <ul>
         <li>

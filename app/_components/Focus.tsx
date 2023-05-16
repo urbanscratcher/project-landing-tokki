@@ -9,15 +9,15 @@ import { MdOutlineHandshake } from "react-icons/md";
 
 const Focus = () => {
   return (
-    <section className={styles.focus}>
-      <h1>Our Focus</h1>
+    <section id="focus" className={styles.focus}>
+      <h1>Our Focus Areas</h1>
       <p>We believe these Six pillars strengthen customer experience</p>
       <ul>
         <li>
           <figure>
             <GiStoneCrafting />
           </figure>
-          <strong>Craftmanship</strong>
+          <header>Craftmanship</header>
           <p>
             We show our craftsmanship by highlighting things like our distillery
             and the ingredients that go into our product.
@@ -27,7 +27,7 @@ const Focus = () => {
           <figure>
             <MdWorkspacePremium />
           </figure>
-          <strong>Korean Premium</strong>
+          <header>Korean Premium</header>
           <p>
             Our brand mission is to elevate the Korean spirits category, so we
             showcase our products in elevated settings with high-end aesthetics.
@@ -37,7 +37,7 @@ const Focus = () => {
           <figure>
             <FaCocktail />
           </figure>
-          <strong>Cocktails</strong>
+          <header>Cocktails</header>
           <p>
             We highlight different cocktails that can be made with our product,
             especially the ones that we serve at our bar.
@@ -47,7 +47,7 @@ const Focus = () => {
           <figure>
             <GiBarStool />
           </figure>
-          <strong>Tokki Bar</strong>
+          <header>Tokki Bar</header>
           <p>
             We show the interior and use the space as a backdrop for other
             photos because we believe the bar embodies the spirit and feel of
@@ -58,7 +58,7 @@ const Focus = () => {
           <figure>
             <BsPeopleFill />
           </figure>
-          <strong>People</strong>
+          <header>People</header>
           <p>
             Our team is the backbone of our company. We highlight our entire
             team at Tokki Soju, from our distillery members to our bar and
@@ -69,7 +69,7 @@ const Focus = () => {
           <figure>
             <MdOutlineHandshake />
           </figure>
-          <strong>collaborations</strong>
+          <header>collaborations</header>
           <p>
             For special edition releases (such as the collaboration rice lager
             with Magpie brewing) we add motion to peak interest.

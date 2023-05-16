@@ -1,0 +1,43 @@
+@use "../_styles/global";
+
+.footer {
+  color: global.$color-base;
+  @include global.selection;
+  @include global.flex-col-left(4rem);
+  padding: 6rem 10rem;
+
+  strong {
+    color: global.$color-primary;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.6rem;
+
+      li {
+        font-size: 1.4rem;
+
+        a {
+          &:hover {
+            color: global.$color-gray;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: global.$color-gray;
+    text-align: left;
+  }
+}

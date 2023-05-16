@@ -24,7 +24,7 @@ const Products = () => {
 
   return (
     <>
-      <section className={styles.products}>
+      <section id="products" className={styles.products}>
         <h1>Meet Our Products</h1>
         <p>we prepared assorted products for you</p>
         <ul>

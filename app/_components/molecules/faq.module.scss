@@ -1,0 +1,33 @@
+@use "../../_styles/global";
+
+.faq {
+  border-bottom: 1px solid global.$color-base-tint-3;
+
+  & > div {
+    @include global.flex-row-center(0);
+    cursor: pointer;
+    justify-content: space-between;
+    font-weight: bold;
+
+    & > figure {
+      font-size: 2.4rem;
+      margin: auto 0;
+    }
+
+    & > p {
+      font-size: 2.4rem;
+      padding: 2rem;
+    }
+  }
+
+  & > p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 2rem;
+    color: global.$color-gray;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans as Jakarta } from "next/font/google";
 import DetailModal from "./_components/DetailModal";
 import Navbar from "./_components/Navbar";
+import Social from "./_components/Social";
 import "./globals.css";
 import Cta from "./_components/Cta";
 import Footer from "./_components/Footer";
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jakarta.className}>
+        <Social />
         <DetailModal />
         <Navbar />
         {children}

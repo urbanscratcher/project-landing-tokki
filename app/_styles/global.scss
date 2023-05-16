@@ -1,13 +1,11 @@
 $color-base: #6c542f;
 $color-base-tint-1: #c1b19c;
-$color-base-tint-2: #d1cabb;
-$color-base-tint-3: #e0dedc;
+$color-base-tint-2: #d3ccc1;
+$color-base-tint-3: #f0eeea;
 $color-base-dark: #4e4231;
 $color-gray: #857c6e;
-$color-primary: #f45207;
-$color-primary-dark: #dc4a06;
-$color-complementary: #2f476c;
-$color-selection-text: #b8702d;
+$color-primary: #f56320;
+$color-primary-dark: #f67336;
 
 @mixin container {
   width: 125rem;
@@ -57,6 +55,20 @@ $color-selection-text: #b8702d;
     font-size: 5.6rem;
     letter-spacing: -1.2px;
     line-height: 1.15;
+    padding-top: 4rem;
+
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5rem;
+      height: 0.5rem;
+      background-color: $color-base-tint-2;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
   }
 
   p {

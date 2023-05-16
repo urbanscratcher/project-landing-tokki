@@ -1,0 +1,24 @@
+@use "../_styles/global";
+
+.social {
+  ul {
+    content: "";
+    position: fixed;
+    right: 0;
+    top: 35vh;
+    z-index: 2;
+    padding-right: 3.5rem;
+    transform: translate(0, -50%);
+
+    @include global.flex-col-center(2rem);
+    li {
+      font-size: 2.5rem;
+      color: global.$color-base-tint-1;
+      transition: all 0.25s;
+
+      &:hover {
+        color: global.$color-base;
+      }
+    }
+  }
+}

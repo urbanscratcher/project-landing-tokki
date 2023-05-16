@@ -2,17 +2,15 @@ import Image from "next/image";
 import styles from "./hero.module.scss";
 import hero from "@/public/images/hero.jpg";
 import Button from "./atoms/Button";
+import Social from "./Social";
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <div>
         <h1>
-          Experience
-          <br />
-          Korean Traditional Spirits
-          <br />
-          by Master Distiller
+          Taste And Experience Korean <strong>Traditional Spirits</strong> by
+          Master Distiller
         </h1>
         <p>
           Our goal is to make soju an internationally respected spirits category
@@ -20,8 +18,8 @@ const Hero = () => {
           distilling standards.
         </p>
 
-        <a href="#">
-          <Button label="Subscribe Now" />
+        <a href="#cta">
+          <Button label="Subscribe Now" primary />
         </a>
       </div>
 

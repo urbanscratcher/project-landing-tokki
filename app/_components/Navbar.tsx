@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <a href="#">about</a>
+          <a href="#about">about</a>
         </li>
         <li>
-          <a href="#">products</a>
+          <a href="#products">products</a>
         </li>
         <li className={styles.logo}>
           <a href="#">
@@ -24,10 +24,10 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#">FAQ</a>
+          <a href="#faqs">FAQs</a>
         </li>
         <li>
-          <a href="#">subscribe</a>
+          <a href="#cta">subscribe</a>
         </li>
       </ul>
     </nav>

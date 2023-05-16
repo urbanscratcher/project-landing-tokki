@@ -7,7 +7,7 @@ interface ButtonProps {
   outline?: boolean;
   primary?: boolean;
   gray?: boolean;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const Button = ({ label, outline, primary, onClick }: ButtonProps) => {
