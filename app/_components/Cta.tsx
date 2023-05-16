@@ -6,7 +6,7 @@ import Button from "./atoms/Button";
 import { HiOutlineMail as EmailIcon } from "react-icons/hi";
 
 const Cta = () => {
-  const clickHandler = useCallback((e) => {
+  const clickHandler = useCallback((e: any) => {
     e.preventDefault();
     console.log("clicked");
   }, []);
