@@ -1,6 +1,8 @@
 @use "./_styles/global.scss";
 
 .home {
+  margin-top: 16.5rem;
+
   color: global.$color-base;
   @include global.selection;
   @include global.flex-col-center(15rem);

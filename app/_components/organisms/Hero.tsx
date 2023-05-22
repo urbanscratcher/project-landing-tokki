@@ -5,7 +5,7 @@ import Button from "../atoms/Button";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <div>
         <h1>
           Taste And Experience Korean <strong>Traditional Spirits</strong> by

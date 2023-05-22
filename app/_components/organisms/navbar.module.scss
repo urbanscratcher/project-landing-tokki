@@ -2,12 +2,18 @@
 
 .nav {
   @include global.selection;
-
   color: global.$color-base;
-  position: sticky;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 999;
+  transition: 0.4s;
 
   ul {
+    background-color: rgba(#fff, 0.95);
+    transition: 0.4s;
+
     font-weight: bold;
     padding: 3.5rem;
     display: flex;
@@ -23,26 +29,70 @@
       a:hover {
         opacity: 0.75;
       }
+
+      &:nth-child(3) {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 11px;
+
+          img {
+            width: 12.5rem;
+            height: auto;
+          }
+
+          &:hover {
+            opacity: 0.75;
+          }
+
+          p {
+            font-size: 1.4rem;
+            font-weight: lighter;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+          }
+        }
+      }
     }
   }
-}
 
-.logo {
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 11px;
+  &.realign {
+    // padding: 2rem 2rem;
+    // background-color: #fff;
+    box-shadow: 0 0 3.2rem 1.8rem rgba(global.$color-gray, 0.05);
 
-    &:hover {
-      opacity: 0.75;
+    ul {
+      height: 8rem;
+      gap: 5rem;
+      justify-content: space-between;
+
+      li {
+        margin: 0 2rem;
+
+        &:nth-child(3) {
+          order: -1;
+          width: 40vw;
+
+          a {
+            flex-direction: row;
+
+            img {
+              width: 9rem;
+            }
+
+            p {
+              line-height: 1.5;
+              font-size: 1.8rem;
+              padding-left: 1rem;
+            }
+          }
+        }
+      }
+
+      &:not(:nth-child(3)) {
+        width: 100%;
+      }
     }
-  }
-
-  a &__text {
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 4px;
   }
 }
