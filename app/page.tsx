@@ -1,5 +1,6 @@
 import About from "./_components/organisms/About";
 import Awards from "./_components/organisms/Awards";
+import Cta from "./_components/organisms/Cta";
 import Faqs from "./_components/organisms/Faqs";
 import Focus from "./_components/organisms/Focus";
 import Hero from "./_components/organisms/Hero";
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <Focus />
       <Faqs />
+      <Cta />
     </main>
   );
 }

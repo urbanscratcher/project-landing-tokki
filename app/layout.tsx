@@ -1,10 +1,9 @@
 import { Plus_Jakarta_Sans as Jakarta } from "next/font/google";
 import DetailModal from "./_components/organisms/DetailModal";
+import Footer from "./_components/organisms/Footer";
 import Navbar from "./_components/organisms/Navbar";
 import Social from "./_components/organisms/Social";
 import "./globals.css";
-import Cta from "./_components/organisms/Cta";
-import Footer from "./_components/organisms/Footer";
 
 const jakarta = Jakarta({ subsets: ["latin"] });
 
@@ -25,7 +24,7 @@ export default function RootLayout({
         <DetailModal />
         <Navbar />
         {children}
-        <Cta />
+
         <Footer />
       </body>
     </html>

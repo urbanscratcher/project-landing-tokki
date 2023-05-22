@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import logo from "@/public/images/logo.png";
 import styles from "./navbar.module.scss";

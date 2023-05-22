@@ -2,12 +2,15 @@
 
 .home {
   color: global.$color-base;
-  @include global.container;
-  @include global.flex-col-center(15rem);
   @include global.selection;
-  margin-bottom: 15rem;
+  @include global.flex-col-center(15rem);
 
   strong {
     color: global.$color-primary;
+  }
+
+  & section:not(:last-child) {
+    @include global.container;
+    margin-bottom: 15rem;
   }
 }

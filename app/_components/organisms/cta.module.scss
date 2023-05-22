@@ -1,8 +1,8 @@
 @use "@/app/_styles/global";
 
 .cta {
-  @include global.selection;
   @include global.flex-col-center(3rem);
+
   padding: 15rem 0;
   background-color: global.$color-base-dark;
   color: global.$color-base-tint-3;
