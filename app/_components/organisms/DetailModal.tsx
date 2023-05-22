@@ -1,8 +1,8 @@
 "use client";
 
-import useDetailModal from "../_hooks/useDetailModal";
-import Modal from "./atoms/Modal";
-import Spec, { SpecInfo } from "./molecules/Spec";
+import useDetailModal from "../../_hooks/useDetailModal";
+import Modal from "../atoms/Modal";
+import Spec, { SpecInfo } from "../molecules/Spec";
 
 export enum Target {
   "WHITE" = "whiteLabel",

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./testimonials.module.scss";
 import Image from "next/image";
-import testimonials1 from "../../public/images/testimonials1.jpg";
+import testimonials1 from "@/public/images/testimonials1.jpg";
 
 const Testimonials = () => {
   return (

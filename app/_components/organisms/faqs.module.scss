@@ -1,4 +1,4 @@
-@use "../_styles/global";
+@use "@/app/_styles/global";
 
 .faqs {
   @include global.flex-row-center(4rem);

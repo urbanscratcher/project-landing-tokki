@@ -1,4 +1,4 @@
-@use "../_styles/global";
+@use "@/app/_styles/global";
 
 .intro {
   @include global.flex-col-center(3rem);

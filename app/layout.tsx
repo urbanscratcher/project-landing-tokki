@@ -1,10 +1,10 @@
 import { Plus_Jakarta_Sans as Jakarta } from "next/font/google";
-import DetailModal from "./_components/DetailModal";
-import Navbar from "./_components/Navbar";
-import Social from "./_components/Social";
+import DetailModal from "./_components/organisms/DetailModal";
+import Navbar from "./_components/organisms/Navbar";
+import Social from "./_components/organisms/Social";
 import "./globals.css";
-import Cta from "./_components/Cta";
-import Footer from "./_components/Footer";
+import Cta from "./_components/organisms/Cta";
+import Footer from "./_components/organisms/Footer";
 
 const jakarta = Jakarta({ subsets: ["latin"] });
 

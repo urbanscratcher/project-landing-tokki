@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Target } from "../_components/DetailModal";
+import { Target } from "../_components/organisms/DetailModal";
 
 interface DetailModalStore {
   isOpen: boolean;

@@ -6,8 +6,8 @@ import products3 from "@/public/images/products-3.png";
 import products4 from "@/public/images/products-4.png";
 import products5 from "@/public/images/products-5.png";
 import { useCallback } from "react";
-import useDetailModal from "../_hooks/useDetailModal";
-import ProductsItem from "./molecules/ProductsItem";
+import useDetailModal from "../../_hooks/useDetailModal";
+import ProductsItem from "../molecules/ProductsItem";
 import styles from "./products.module.scss";
 import { Target } from "./DetailModal";
 

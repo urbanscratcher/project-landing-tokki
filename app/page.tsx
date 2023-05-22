@@ -1,11 +1,11 @@
-import About from "./_components/About";
-import Awards from "./_components/Awards";
-import Faqs from "./_components/Faqs";
-import Focus from "./_components/Focus";
-import Hero from "./_components/Hero";
-import Intro from "./_components/Intro";
-import Products from "./_components/Products";
-import Testimonials from "./_components/Testimonials";
+import About from "./_components/organisms/About";
+import Awards from "./_components/organisms/Awards";
+import Faqs from "./_components/organisms/Faqs";
+import Focus from "./_components/organisms/Focus";
+import Hero from "./_components/organisms/Hero";
+import Intro from "./_components/organisms/Intro";
+import Products from "./_components/organisms/Products";
+import Testimonials from "./_components/organisms/Testimonials";
 import styles from "./page.module.scss";
 
 export default function Home() {

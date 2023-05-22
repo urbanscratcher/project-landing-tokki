@@ -1,4 +1,4 @@
-@use "../_styles/global";
+@use "@/app/_styles/global";
 
 .about {
   @include global.section-heading;

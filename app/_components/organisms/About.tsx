@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./about.module.scss";
-import founder1 from "../../public/images/founder-1.jpg";
-import founder2 from "../../public/images/founder-2.jpg";
+import founder1 from "@/public/images/founder-1.jpg";
+import founder2 from "@/public/images/founder-2.jpg";
 import Image from "next/image";
 
 const About = () => {

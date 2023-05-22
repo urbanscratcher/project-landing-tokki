@@ -1,5 +1,5 @@
 import styles from "./faqs.module.scss";
-import Faq from "./molecules/Faq";
+import Faq from "../molecules/Faq";
 
 const Faqs = () => {
   const data = [

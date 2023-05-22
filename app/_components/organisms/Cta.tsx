@@ -2,7 +2,7 @@
 
 import React, { useCallback } from "react";
 import styles from "./cta.module.scss";
-import Button from "./atoms/Button";
+import Button from "../atoms/Button";
 import { HiOutlineMail as EmailIcon } from "react-icons/hi";
 
 const Cta = () => {

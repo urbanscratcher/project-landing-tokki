@@ -1,8 +1,7 @@
 import Image from "next/image";
 import styles from "./hero.module.scss";
 import hero from "@/public/images/hero.jpg";
-import Button from "./atoms/Button";
-import Social from "./Social";
+import Button from "../atoms/Button";
 
 const Hero = () => {
   return (
