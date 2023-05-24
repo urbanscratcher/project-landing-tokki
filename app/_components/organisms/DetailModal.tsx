@@ -77,7 +77,7 @@ const DetailModal = () => {
       onClose={detailModal.onClose}
       onClickOutside={detailModal.onClose}
     >
-      <Image src={random} alt="random" />
+      {/* <Image src={random} alt="random" /> */}
       <Spec info={info} />
     </Modal>
   );
