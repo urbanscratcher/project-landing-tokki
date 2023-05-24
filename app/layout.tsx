@@ -4,6 +4,7 @@ import Footer from "./_components/organisms/Footer";
 import Navbar from "./_components/organisms/Navbar";
 import Social from "./_components/organisms/Social";
 import "./globals.css";
+import dynamic from "next/dynamic";
 
 const jakarta = Jakarta({ subsets: ["latin"] });
 
@@ -17,14 +18,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const DynamicModal = dynamic(
+    () => import("./_components/organisms/DetailModal"),
+    {
+      loading: () => <p>loading...</p>,
+    }
+  );
+
   return (
     <html lang="en">
-      <body className={jakarta.className}>
+      <body className={jakarta.className} suppressHydrationWarning={true}>
         <Social />
-        <DetailModal />
+        <DynamicModal />
         <Navbar />
         {children}
-
         <Footer />
       </body>
     </html>

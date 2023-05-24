@@ -8,7 +8,6 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  transition: 0.4s;
 
   ul {
     background-color: rgba(#fff, 0.95);
@@ -21,10 +20,14 @@
     align-items: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-    gap: 12rem;
+    gap: 10rem;
 
     li {
       font-size: 1.6rem;
+
+      a {
+        padding: 100% 2rem;
+      }
 
       a:hover {
         opacity: 0.75;
@@ -36,6 +39,7 @@
           flex-direction: column;
           align-items: center;
           gap: 11px;
+          padding: 0 2rem;
 
           img {
             width: 12.5rem;
@@ -58,8 +62,6 @@
   }
 
   &.realign {
-    // padding: 2rem 2rem;
-    // background-color: #fff;
     box-shadow: 0 0 3.2rem 1.8rem rgba(global.$color-gray, 0.05);
 
     ul {

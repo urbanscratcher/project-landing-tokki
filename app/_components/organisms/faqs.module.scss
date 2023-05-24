@@ -20,7 +20,8 @@
     }
   }
 
-  & > ul {
+  ul {
+    margin-top: 8.5rem;
     width: 55%;
     @include global.flex-col-left(0);
     justify-content: flex-start;

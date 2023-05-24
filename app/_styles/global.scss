@@ -55,7 +55,7 @@ $color-primary-dark: #f67336;
     font-size: 5.6rem;
     letter-spacing: -1.2px;
     line-height: 1.15;
-    padding-top: 4rem;
+    padding-top: 8.5rem;
 
     position: relative;
 
@@ -69,12 +69,12 @@ $color-primary-dark: #f67336;
       top: 0;
       transform: translateX(-50%);
     }
-  }
 
-  p {
-    font-size: 2rem;
-    color: $color-gray;
-    margin-bottom: 1.7rem;
+    & + p {
+      font-size: 2rem;
+      color: $color-gray;
+      margin-bottom: 1.7rem;
+    }
   }
 }
 

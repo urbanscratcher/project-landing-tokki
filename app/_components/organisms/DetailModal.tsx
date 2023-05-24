@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import useDetailModal from "../../_hooks/useDetailModal";
 import Modal from "../atoms/Modal";
 import Spec, { SpecInfo } from "../molecules/Spec";
+import random from "@/public/images/gallery-9.jpg";
 
 export enum Target {
   "WHITE" = "whiteLabel",
@@ -75,6 +77,7 @@ const DetailModal = () => {
       onClose={detailModal.onClose}
       onClickOutside={detailModal.onClose}
     >
+      <Image src={random} alt="random" />
       <Spec info={info} />
     </Modal>
   );
