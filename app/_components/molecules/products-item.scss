@@ -47,15 +47,12 @@
     h2 {
       font-size: 3.6rem;
       font-weight: bold;
-    }
 
-    p {
-      font-size: 1.8rem;
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    a {
+      & + p {
+        font-size: 1.8rem;
+        line-height: 1.7;
+        margin: 0;
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import "./products-item.scss";
 import classNames from "classnames";
 import Button from "../atoms/Button";
-import { FiArrowUpRight as ArrowIcon } from "react-icons/fi";
+import { MdOutlineArrowOutward as ArrowIcon } from "react-icons/md";
 
 interface ProductsItemProps {
   imageSrc: StaticImageData;
@@ -36,7 +36,7 @@ const ProductsItem = ({
       <div className="left">
         <h2>{title}</h2>
         <p>{description}</p>
-        <a>
+        <p>
           <Button
             label={
               <span>
@@ -47,7 +47,7 @@ const ProductsItem = ({
             outline={true}
             onClick={clickHandler}
           />
-        </a>
+        </p>
       </div>
     </li>
   );

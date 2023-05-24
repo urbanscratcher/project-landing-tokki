@@ -16,7 +16,7 @@
   color: #fff;
   padding: 1.7rem 3rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 3rem;
   font-size: 1.8rem;
   background-color: global.$color-primary;
   transition-duration: 0.2s;
@@ -40,6 +40,21 @@
 
     &.outline {
       @include outline(global.$color-primary);
+    }
+  }
+
+  &.circle {
+    padding: 1.4rem;
+    aspect-ratio: 1/1;
+    border-radius: 5rem;
+  }
+
+  &.noFill {
+    background-color: rgba(255, 255, 255, 0);
+    color: global.$color-base-tint-1;
+
+    &:hover {
+      color: global.$color-base;
     }
   }
 }

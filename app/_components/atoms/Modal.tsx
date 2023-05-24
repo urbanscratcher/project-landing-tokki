@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { IoMdClose as IconClose } from "react-icons/io";
+import { MdClose as CloseIcon } from "react-icons/md";
 import "./modal.scss";
 
 interface ModalProps {
@@ -32,7 +32,7 @@ const Modal = ({ children, isOpen, onClose, onClickOutside }: ModalProps) => {
       <div className="modal--position" onClick={(e) => e.stopPropagation()}>
         <div className="modal--container">
           {children}
-          <IconClose onClick={closeHandler} className="close" />
+          <CloseIcon onClick={closeHandler} className="close" />
         </div>
       </div>
     </div>

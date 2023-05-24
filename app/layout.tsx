@@ -18,13 +18,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const DynamicModal = dynamic(
-  //   () => import("./_components/organisms/DetailModal"),
-  //   {
-  //     loading: () => <p>loading...</p>,
-  //   }
-  // );
-
   return (
     <html lang="en">
       <body className={jakarta.className} suppressHydrationWarning={true}>

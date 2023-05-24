@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./focus.module.scss";
-import { GiStoneCrafting } from "react-icons/gi";
-import { MdWorkspacePremium } from "react-icons/md";
-import { FaCocktail } from "react-icons/fa";
-import { GiBarStool } from "react-icons/gi";
-import { BsPeopleFill } from "react-icons/bs";
-import { MdOutlineHandshake } from "react-icons/md";
+import {
+  MdBuild as CraftIcon,
+  MdWorkspacePremium as PremiumIcon,
+  MdTableRestaurant as StoolIcon,
+  MdLocalBar as BarIcon,
+  MdPeople as PeopleIcon,
+  MdOutlineHandshake as CollaborationIcon,
+} from "react-icons/md";
 
 const Focus = () => {
   return (
@@ -15,7 +17,7 @@ const Focus = () => {
       <ul>
         <li>
           <figure>
-            <GiStoneCrafting />
+            <CraftIcon />
           </figure>
           <header>Craftmanship</header>
           <p>
@@ -25,7 +27,7 @@ const Focus = () => {
         </li>
         <li>
           <figure>
-            <MdWorkspacePremium />
+            <PremiumIcon />
           </figure>
           <header>Korean Premium</header>
           <p>
@@ -35,7 +37,7 @@ const Focus = () => {
         </li>
         <li>
           <figure>
-            <FaCocktail />
+            <BarIcon />
           </figure>
           <header>Cocktails</header>
           <p>
@@ -45,7 +47,7 @@ const Focus = () => {
         </li>
         <li>
           <figure>
-            <GiBarStool />
+            <StoolIcon />
           </figure>
           <header>Tokki Bar</header>
           <p>
@@ -56,7 +58,7 @@ const Focus = () => {
         </li>
         <li>
           <figure>
-            <BsPeopleFill />
+            <PeopleIcon />
           </figure>
           <header>People</header>
           <p>
@@ -67,7 +69,7 @@ const Focus = () => {
         </li>
         <li>
           <figure>
-            <MdOutlineHandshake />
+            <CollaborationIcon />
           </figure>
           <header>collaborations</header>
           <p>

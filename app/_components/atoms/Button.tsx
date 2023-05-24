@@ -7,14 +7,29 @@ interface ButtonProps {
   outline?: boolean;
   primary?: boolean;
   gray?: boolean;
+  circle?: boolean;
+  noFill?: boolean;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Button = ({ label, outline, primary, onClick }: ButtonProps) => {
+const Button = ({
+  label,
+  outline,
+  primary,
+  circle,
+  noFill,
+  onClick,
+}: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={classNames("button", { outline }, { primary })}
+      className={classNames(
+        "button",
+        { outline },
+        { primary },
+        { circle },
+        { noFill }
+      )}
     >
       {label}
     </button>

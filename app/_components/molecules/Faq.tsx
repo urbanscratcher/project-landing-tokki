@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import styles from "./faq.module.scss";
 import {
-  SlArrowUp as ArrowUpIcon,
-  SlArrowDown as ArrowDownIcon,
-} from "react-icons/sl";
+  MdOutlineExpandLess as ArrowUpIcon,
+  MdOutlineExpandMore as ArrowDownIcon,
+} from "react-icons/md";
 
 interface FaqProps {
   question: string;
@@ -22,7 +22,7 @@ const Faq = ({ question, answer }: FaqProps) => {
     <li onClick={toggleHandler} className={styles.faq}>
       <div>
         <p>{question}</p>
-        <figure>{isShown ? <ArrowUpIcon /> : <ArrowDownIcon />}</figure>
+        <span>{isShown ? <ArrowUpIcon /> : <ArrowDownIcon />}</span>
       </div>
       <p className={isShown ? "" : "hidden"}>{answer}</p>
     </li>

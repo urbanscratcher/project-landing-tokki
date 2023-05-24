@@ -1,5 +1,4 @@
-import Image, { StaticImageData } from "next/image";
-import { BsCheckLg as CheckPoint } from "react-icons/bs";
+import { MdCheck as CheckIcon } from "react-icons/md";
 import styles from "./spec.module.scss";
 
 export type SpecInfo = {
@@ -20,7 +19,7 @@ const Spec = ({ info }: SpecProps) => {
           {info.specs.map((i) => {
             return (
               <li key={i}>
-                <CheckPoint /> &nbsp; {i}
+                <CheckIcon /> &nbsp; {i}
               </li>
             );
           })}

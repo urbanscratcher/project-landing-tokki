@@ -3,14 +3,14 @@
 .faq {
   border-bottom: 1px solid global.$color-base-tint-3;
 
-  & > div {
+  div {
     @include global.flex-row-center(0);
     cursor: pointer;
     justify-content: space-between;
     font-weight: bold;
 
-    & > figure {
-      font-size: 2.4rem;
+    span {
+      font-size: 2.8rem;
       margin: auto 0;
     }
 

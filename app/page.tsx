@@ -19,9 +19,9 @@ export default function Home() {
       <Products />
       <Awards />
       <Testimonials />
-      <Gallery />
       <About />
       <Focus />
+      <Gallery />
       <Faqs />
       <Cta />
     </main>
