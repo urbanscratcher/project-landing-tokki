@@ -9,9 +9,8 @@ import gallery6 from "@/public/images/gallery-6.jpg";
 import gallery7 from "@/public/images/gallery-7.jpg";
 import gallery8 from "@/public/images/gallery-8.jpg";
 import gallery9 from "@/public/images/gallery-9.jpg";
-import classNames from "classnames";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   MdArrowForwardIos as NextIcon,
   MdArrowBackIosNew as PrevIcon,
@@ -70,12 +69,6 @@ const Gallery = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    setTimeout(() => {
-      console.log("time");
-    }, 300);
-  }, [currentSlide]);
-
   const nextHandler = () => {
     const nextSlide = currentSlide + 1;
     return nextSlide > images.length - 1
@@ -101,13 +94,14 @@ const Gallery = () => {
           {images.map((i) => (
             <li
               key={i.idx}
-              className={i.idx === currentSlide ? "currentGallery" : ""}
               style={
                 i.idx === currentSlide
                   ? {
                       transform: `translateX(${
                         130 * (i.idx - currentSlide) - 49
                       }%)`,
+                      scale: "100%",
+                      boxShadow: `0 3.5rem 4.5rem 0 rgb(133, 124, 110, 0.5)`,
                     }
                   : i.idx > currentSlide
                   ? {
@@ -121,6 +115,7 @@ const Gallery = () => {
                       }%)`,
                     }
               }
+              className={i.idx === currentSlide ? "currentGallery" : undefined}
             >
               <Image
                 src={i!.imageSrc}

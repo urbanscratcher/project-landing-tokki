@@ -1,13 +1,5 @@
 @use "@/app/_styles/global";
 
-.currentGallery {
-  background-color: rgba(global.$color-base-dark, 0);
-  box-shadow: 0 3.5rem 4.5rem 0 rgba(global.$color-gray, 1);
-  // filter: blur(0);
-  scale: 100%;
-  background-color: blue;
-}
-
 .gallery {
   position: relative;
   margin: 0;
@@ -15,12 +7,11 @@
   flex-direction: column;
   overflow: hidden;
 
-  & > div {
+  div {
     ol {
       height: 75vh;
       max-height: 80rem;
       position: relative;
-
       margin-bottom: 5rem;
 
       li {
@@ -36,7 +27,7 @@
         transition: all 0.3s;
         scale: 80%;
         background-color: rgba(global.$color-base-dark, 0.9);
-        box-shadow: 0 1rem 1rem 0 rgba(global.$color-gray, 1);
+        box-shadow: 0 1rem 1rem 0 rgba(global.$color-gray, 0.5);
 
         img {
           width: 100%;
