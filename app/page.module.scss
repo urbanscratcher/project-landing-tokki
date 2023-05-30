@@ -11,8 +11,8 @@
     color: global.$color-primary;
   }
 
-  & section:not(:last-child, :nth-child(8)) {
+  & section:not(:first-child, :last-child, :nth-child(8)) {
     @include global.container;
-    margin-bottom: 15rem;
+    // margin-bottom: 15rem;
   }
 }

@@ -42,8 +42,7 @@
     figure {
       overflow: hidden;
       width: 40%;
-      height: 53rem;
-      max-height: 53rem;
+      height: auto;
       background-color: rgba(global.$color-gray, 0.9);
 
       img {

@@ -7,9 +7,18 @@ $color-gray: #857c6e;
 $color-primary: #f56320;
 $color-primary-dark: #f67336;
 
+$break-xl: 1300px;
+$break-l: 1100px;
+$break-m: 900px;
+
 @mixin container {
-  width: 125rem;
+  max-width: 125rem;
   margin: 0 auto;
+  padding: 0 3rem;
+
+  @media (max-width: $break-m) {
+    padding: 0 2rem;
+  }
 }
 
 @mixin flex-col($gap) {
@@ -56,8 +65,11 @@ $color-primary-dark: #f67336;
     letter-spacing: -1.2px;
     line-height: 1.15;
     padding-top: 8.5rem;
-
     position: relative;
+
+    @media (max-width: $break-l) {
+      width: 80%;
+    }
 
     &:before {
       content: "";

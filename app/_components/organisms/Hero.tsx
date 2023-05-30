@@ -27,7 +27,6 @@ const Hero = () => {
           src={hero}
           alt="a bottle labeled with tokki soju"
           sizes="100vw"
-          className={styles.image}
         />
       </figure>
     </section>
