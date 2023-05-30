@@ -45,10 +45,12 @@
       margin-bottom: 1rem;
       letter-spacing: -1.5px;
 
-      @media (max-width: global.$break-xl) {
+      @media (max-width: global.$break-sm) {
+        font-size: 6rem;
       }
 
-      @media (max-width: global.$break-l) {
+      @media (max-width: global.$break-s) {
+        font-size: 5rem;
       }
     }
 
@@ -61,6 +63,10 @@
 
       @media (max-width: global.$break-m) {
         width: 95%;
+      }
+
+      @media (max-width: global.$break-s) {
+        font-size: 1.6rem;
       }
     }
 

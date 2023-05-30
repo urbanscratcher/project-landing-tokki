@@ -1,5 +1,27 @@
 @use "@/app/_styles/global";
 
+.mobileIcon {
+  font-size: 4.2rem;
+  text-align: center;
+  margin: 1rem;
+  margin-left: auto;
+  color: rgba(global.$color-gray, 0.8);
+  width: 5rem;
+  height: 5rem;
+  padding: 0.25rem 0.3rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 0;
+
+  @media (min-width: global.$break-sm) {
+    display: none;
+  }
+}
+
 .nav {
   @include global.selection;
   color: global.$color-base;
@@ -8,12 +30,23 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  max-height: 50rem;
+
+  @media (max-width: global.$break-sm) {
+    height: 0;
+
+    .toggleNav {
+      transform: translate(0);
+      position: fixed;
+      top: 0;
+      right: 0;
+
+      transition: all 0.3s;
+    }
+  }
 
   ul {
     background-color: rgba(#fff, 0.95);
-    transition: 0.4s;
-
+    transition: all 0.3s;
     font-weight: bold;
     padding: 3.5rem;
     display: flex;
@@ -32,7 +65,12 @@
     }
 
     @media (max-width: global.$break-sm) {
-      gap: 0;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 4rem;
+      transform: translate(100%, 0);
     }
 
     li {
@@ -40,6 +78,10 @@
 
       a {
         padding: 100% 2rem;
+
+        @media (max-width: global.$break-sm) {
+          padding: 2rem 2rem;
+        }
       }
 
       a:hover {
@@ -47,6 +89,10 @@
       }
 
       &:nth-child(3) {
+        @media (max-width: global.$break-sm) {
+          order: -1;
+        }
+
         a {
           display: flex;
           flex-direction: column;
@@ -81,6 +127,10 @@
   }
 
   &.realign {
+    @media (max-width: global.$break-sm) {
+      box-shadow: 0 0 0 0 rgba(#fff, 0);
+    }
+
     box-shadow: 0 0 3.2rem 1.8rem rgba(global.$color-gray, 0.05);
     transition: all 0.3s;
 
@@ -99,6 +149,15 @@
         gap: 0;
       }
 
+      @media (max-width: global.$break-sm) {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+        transform: translate(100%, 0);
+      }
+
       li {
         margin: 0 2rem;
 
@@ -115,10 +174,6 @@
 
             img {
               width: 9rem;
-
-              @media (max-width: global.$break-sm) {
-                width: 8rem;
-              }
             }
 
             p {
@@ -126,10 +181,6 @@
               font-size: 1.8rem;
               padding-left: 1rem;
               text-align: left;
-
-              @media (max-width: global.$break-sm) {
-                display: none;
-              }
             }
           }
         }

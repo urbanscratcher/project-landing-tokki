@@ -18,6 +18,10 @@
     padding-top: 12rem;
     font-weight: bolder;
     font-size: 6.4rem;
+
+    @media (max-width: global.$break-sm) {
+      font-size: 5rem;
+    }
   }
 
   p {
@@ -29,6 +33,10 @@
 
     @media (max-width: global.$break-m) {
       padding: 0 2rem;
+    }
+
+    @media (max-width: global.$break-sm) {
+      font-size: 1.8rem;
     }
   }
 

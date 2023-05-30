@@ -2,18 +2,38 @@
 
 .products-item {
   @include global.flex-row-center(1rem);
-  height: 50rem;
+  max-height: 60rem;
+
+  @media (max-width: global.$break-sm) {
+    flex-direction: column;
+  }
 
   &.products-item-reversed {
     flex-direction: row-reverse;
     div {
       text-align: right;
+
+      @media (max-width: global.$break-sm) {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    @media (max-width: global.$break-sm) {
+      flex-direction: column;
     }
   }
 
   figure {
     width: 50%;
+    max-height: 50rem;
     position: relative;
+
+    @media (max-width: global.$break-sm) {
+      height: 30rem;
+      margin: auto;
+    }
 
     img {
       width: auto;
@@ -43,6 +63,13 @@
     @include global.flex-col-center(2rem);
     width: 50%;
     text-align: left;
+
+    @media (max-width: global.$break-sm) {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
 
     h2 {
       font-size: 3.6rem;

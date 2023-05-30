@@ -3,6 +3,10 @@
 .home {
   margin-top: 16.5rem;
 
+  @media (max-width: global.$break-sm) {
+    margin-top: 0;
+  }
+
   color: global.$color-base;
   @include global.selection;
   @include global.flex-col-center(15rem);
@@ -13,6 +17,5 @@
 
   & section:not(:first-child, :last-child, :nth-child(8)) {
     @include global.container;
-    // margin-bottom: 15rem;
   }
 }

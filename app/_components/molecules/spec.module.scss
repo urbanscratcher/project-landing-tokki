@@ -17,16 +17,23 @@
       letter-spacing: -1.2px;
       line-height: 1.15;
       text-align: center;
+
+      @media (max-width: global.$break-sm) {
+        font-size: 4rem;
+      }
     }
 
     ul {
       @include global.flex-col-center(2.5rem);
       padding-left: 5rem;
-
       color: global.$color-base;
       font-size: 1.8rem;
       line-height: 1.7;
       margin: 0;
+
+      @media (max-width: global.$break-sm) {
+        padding-left: 1rem;
+      }
 
       li {
         padding: 1rem 0.3rem;

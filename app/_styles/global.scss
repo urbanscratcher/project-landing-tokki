@@ -11,6 +11,7 @@ $break-xl: 1300px;
 $break-l: 1100px;
 $break-m: 900px;
 $break-sm: 700px;
+$break-s: 600px;
 
 @mixin container {
   max-width: 125rem;
@@ -73,6 +74,7 @@ $break-sm: 700px;
     }
     @media (max-width: $break-m) {
       width: 95%;
+      font-size: 5rem;
     }
 
     &:before {
