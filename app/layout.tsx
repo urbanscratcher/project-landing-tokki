@@ -22,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={jakarta.className} suppressHydrationWarning={true}>
         <DetailModal />
-        <Social />
         <Navbar />
         {children}
         <Footer />
+        <Social />
       </body>
     </html>
   );

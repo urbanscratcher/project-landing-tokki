@@ -10,6 +10,9 @@ $color-primary-dark: #f67336;
 $break-xl: 1300px;
 $break-l: 1100px;
 $break-m: 900px;
+$break-sm: 800px;
+$break-s: 600px;
+$break-xs: 400px;
 
 @mixin container {
   max-width: 125rem;
@@ -70,6 +73,9 @@ $break-m: 900px;
     @media (max-width: $break-l) {
       width: 80%;
     }
+    @media (max-width: $break-m) {
+      width: 95%;
+    }
 
     &:before {
       content: "";
@@ -86,6 +92,7 @@ $break-m: 900px;
       font-size: 2rem;
       color: $color-gray;
       margin-bottom: 1.7rem;
+      line-height: 1.5;
     }
   }
 }

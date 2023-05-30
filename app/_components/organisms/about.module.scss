@@ -7,6 +7,10 @@
   ul {
     @include global.flex-row-center(3rem);
 
+    @media (max-width: global.$break-m) {
+      flex-direction: column;
+    }
+
     li {
       @include global.flex-col-center(2rem);
       justify-content: flex-start;
@@ -16,9 +20,17 @@
       border: 1px solid global.$color-base-tint-3;
       padding: 3rem 0;
 
+      @media (max-width: global.$break-m) {
+        width: 100%;
+      }
+
       figure {
         height: 45rem;
         padding: 0 3rem;
+
+        @media (max-width: global.$break-m) {
+          height: 30rem;
+        }
 
         img {
           width: 100%;
@@ -67,6 +79,10 @@
           strong {
             color: global.$color-base;
             font-weight: bold;
+          }
+
+          @media (max-width: global.$break-m) {
+            padding: 0 3rem;
           }
         }
       }

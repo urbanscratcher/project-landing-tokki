@@ -9,9 +9,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
+    gap: 4rem;
 
-    column-gap: 4rem;
-    row-gap: 4rem;
+    @media (max-width: global.$break-m) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
 
     li {
       @include global.flex-col-center(2rem);

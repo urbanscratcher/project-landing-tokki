@@ -5,10 +5,9 @@
     content: "";
     position: fixed;
     right: 0;
-    top: 35vh;
-    z-index: 20;
+    top: 25vh;
+    z-index: 1000;
     padding-right: 3.5rem;
-    transform: translate(0, -50%);
 
     @include global.flex-col-center(2rem);
     li {
@@ -19,6 +18,14 @@
       &:hover {
         color: global.$color-base;
       }
+    }
+
+    @media (max-width: global.$break-m) {
+      position: static;
+      padding: 1rem;
+      justify-content: end;
+      flex-direction: row;
+      transform: translateY(-570%);
     }
   }
 }

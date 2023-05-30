@@ -4,11 +4,28 @@
   @include global.flex-row-center(4rem);
   justify-content: left;
 
+  @media (max-width: global.$break-m) {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
   & > header {
     width: 45%;
     @include global.section-heading;
     @include global.flex-col-left(3rem);
     justify-content: flex-start;
+
+    @media (max-width: global.$break-m) {
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    p {
+      justify-self: center;
+      margin: 0;
+    }
 
     & > h1 {
       width: 100%;
@@ -16,6 +33,11 @@
       &:before {
         left: 0;
         margin: 0 2rem;
+
+        @media (max-width: global.$break-m) {
+          left: 50%;
+          translate: transformX(-50%);
+        }
       }
     }
   }
@@ -25,5 +47,10 @@
     width: 55%;
     @include global.flex-col-left(0);
     justify-content: flex-start;
+
+    @media (max-width: global.$break-m) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

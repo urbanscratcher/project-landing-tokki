@@ -39,7 +39,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#">
-            <Image src={logo} alt="Tokki Soju Logo" sizes="100vh" />
+            <Image src={logo} alt="Tokki Soju Logo" sizes="125px" />
             <p>TOKKI SOJU</p>
           </a>
         </li>

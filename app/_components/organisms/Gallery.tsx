@@ -98,7 +98,7 @@ const Gallery = () => {
                 i.idx === currentSlide
                   ? {
                       transform: `translateX(${
-                        130 * (i.idx - currentSlide) - 49
+                        130 * (i.idx - currentSlide) - 50
                       }%)`,
                       scale: "100%",
                       boxShadow: `0 3.5rem 4.5rem 0 rgb(133, 124, 110, 0.5)`,

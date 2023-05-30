@@ -16,16 +16,20 @@
 
   header {
     padding-top: 12rem;
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 6.4rem;
   }
 
   p {
-    width: 80rem;
+    max-width: 80rem;
     margin: 0 auto;
     font-size: 2rem;
     line-height: 1.8;
     color: global.$color-base-tint-3;
+
+    @media (max-width: global.$break-m) {
+      padding: 0 2rem;
+    }
   }
 
   form {

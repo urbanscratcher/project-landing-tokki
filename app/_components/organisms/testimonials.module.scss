@@ -11,10 +11,19 @@
     overflow: hidden;
     box-shadow: 0 4rem 7rem 0 rgba(global.$color-gray, 0.4);
 
+    @media (max-width: global.$break-m) {
+      flex-direction: column-reverse;
+    }
+
     blockquote {
       @include global.flex-col-left(2rem);
       width: 60%;
       padding: 7rem 4rem 7rem 5rem;
+
+      @media (max-width: global.$break-m) {
+        width: 100%;
+        padding: 4.5rem 3.5rem 5.5rem 3.5rem;
+      }
 
       q {
         font-weight: 700;
@@ -44,6 +53,10 @@
       width: 40%;
       height: auto;
       background-color: rgba(global.$color-gray, 0.9);
+
+      @media (max-width: global.$break-m) {
+        width: 100%;
+      }
 
       img {
         mix-blend-mode: hard-light;
