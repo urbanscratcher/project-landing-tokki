@@ -31,6 +31,10 @@
       gap: 2rem;
     }
 
+    @media (max-width: global.$break-sm) {
+      gap: 0;
+    }
+
     li {
       font-size: 1.6rem;
 
@@ -53,6 +57,10 @@
           img {
             width: 12.5rem;
             height: auto;
+
+            @media (max-width: global.$break-sm) {
+              width: 8rem;
+            }
           }
 
           &:hover {
@@ -64,6 +72,8 @@
             font-weight: lighter;
             text-transform: uppercase;
             letter-spacing: 4px;
+            line-height: 1.2;
+            text-align: center;
           }
         }
       }
@@ -105,12 +115,21 @@
 
             img {
               width: 9rem;
+
+              @media (max-width: global.$break-sm) {
+                width: 8rem;
+              }
             }
 
             p {
               line-height: 1.5;
               font-size: 1.8rem;
               padding-left: 1rem;
+              text-align: left;
+
+              @media (max-width: global.$break-sm) {
+                display: none;
+              }
             }
           }
         }

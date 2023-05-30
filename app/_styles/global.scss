@@ -10,9 +10,7 @@ $color-primary-dark: #f67336;
 $break-xl: 1300px;
 $break-l: 1100px;
 $break-m: 900px;
-$break-sm: 800px;
-$break-s: 600px;
-$break-xs: 400px;
+$break-sm: 700px;
 
 @mixin container {
   max-width: 125rem;

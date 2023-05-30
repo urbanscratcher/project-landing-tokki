@@ -6,6 +6,10 @@
   @include global.flex-col-left(4rem);
   padding: 6rem 10rem;
 
+  @media (max-width: global.$break-m) {
+    padding: 6rem 5rem;
+  }
+
   strong {
     color: global.$color-primary;
   }
