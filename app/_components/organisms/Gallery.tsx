@@ -9,14 +9,15 @@ import gallery6 from "@/public/images/gallery-6.jpg";
 import gallery7 from "@/public/images/gallery-7.jpg";
 import gallery8 from "@/public/images/gallery-8.jpg";
 import gallery9 from "@/public/images/gallery-9.jpg";
+import classNames from "classnames";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import {
   MdArrowForwardIos as NextIcon,
   MdArrowBackIosNew as PrevIcon,
 } from "react-icons/md";
 import Button from "../atoms/Button";
 import "./gallery.scss";
-import { useState } from "react";
 
 const Gallery = () => {
   const images = [
@@ -69,6 +70,12 @@ const Gallery = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("time");
+    }, 300);
+  }, [currentSlide]);
+
   const nextHandler = () => {
     const nextSlide = currentSlide + 1;
     return nextSlide > images.length - 1
@@ -83,14 +90,6 @@ const Gallery = () => {
       : setCurrentSlide(nextSlide);
   };
 
-  const currentImg = images.find((i) => i.idx === currentSlide);
-  const prevImg =
-    images.find((i) => i.idx === currentSlide - 1) ??
-    images.find((i) => i.idx === images.length - 1);
-  const nextImg =
-    images.find((i) => i.idx === currentSlide + 1) ??
-    images.find((i) => i.idx === 0);
-
   const goToHandler = (idx: number) => {
     setCurrentSlide(idx);
   };
@@ -99,15 +98,41 @@ const Gallery = () => {
     <section id="gallery" className="gallery">
       <div>
         <ol>
-          <li>
-            <Image src={prevImg!.imageSrc} alt={prevImg!.alt} />
-          </li>
-          <li>
-            <Image src={currentImg!.imageSrc} alt={currentImg!.alt} />
-          </li>
-          <li>
-            <Image src={nextImg!.imageSrc} alt={nextImg!.alt} />
-          </li>
+          {images.map((i) => (
+            <li
+              key={i.idx}
+              className={i.idx === currentSlide ? "currentGallery" : ""}
+              style={
+                i.idx === currentSlide
+                  ? {
+                      transform: `translateX(${
+                        130 * (i.idx - currentSlide) - 49
+                      }%)`,
+                    }
+                  : i.idx > currentSlide
+                  ? {
+                      transform: `translateX(${
+                        130 * (i.idx - currentSlide) - 46
+                      }%)`,
+                    }
+                  : {
+                      transform: `translateX(${
+                        130 * (i.idx - currentSlide) - 79
+                      }%)`,
+                    }
+              }
+            >
+              <Image
+                src={i!.imageSrc}
+                alt={i!.alt}
+                style={
+                  i.idx === currentSlide
+                    ? undefined
+                    : { mixBlendMode: `soft-light`, filter: `blur(0.5rem)` }
+                }
+              />
+            </li>
+          ))}
           <Button onClick={prevHandler} label={<PrevIcon />} circle noFill />
           <Button onClick={nextHandler} label={<NextIcon />} circle noFill />
         </ol>

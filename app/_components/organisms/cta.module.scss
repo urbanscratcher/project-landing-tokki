@@ -2,18 +2,26 @@
 
 .cta {
   @include global.flex-col-center(3rem);
+  padding-bottom: 15rem;
 
-  padding: 15rem 0;
   background-color: global.$color-base-dark;
   color: global.$color-base-tint-3;
 
+  &::before {
+    content: "";
+    padding-top: 8rem;
+    background: #fff;
+    top: 0;
+  }
+
   header {
+    padding-top: 12rem;
     font-weight: 800;
     font-size: 6.4rem;
   }
 
   p {
-    width: 60%;
+    width: 80rem;
     margin: 0 auto;
     font-size: 2rem;
     line-height: 1.8;

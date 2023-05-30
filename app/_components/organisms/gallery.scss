@@ -1,5 +1,13 @@
 @use "@/app/_styles/global";
 
+.currentGallery {
+  background-color: rgba(global.$color-base-dark, 0);
+  box-shadow: 0 3.5rem 4.5rem 0 rgba(global.$color-gray, 1);
+  // filter: blur(0);
+  scale: 100%;
+  background-color: blue;
+}
+
 .gallery {
   position: relative;
   margin: 0;
@@ -25,29 +33,10 @@
         border-radius: 1rem;
         overflow: hidden;
         z-index: -1;
+        transition: all 0.3s;
+        scale: 80%;
         background-color: rgba(global.$color-base-dark, 0.9);
-        img {
-          mix-blend-mode: soft-light;
-          filter: blur(0.5rem);
-        }
-
-        &:first-child {
-          transform: translateX(-170%) scale(80%);
-        }
-
-        &:nth-child(2) {
-          background-color: rgba(global.$color-base-dark, 0);
-          transform: translateX(-50%);
-          box-shadow: 0 3.5rem 4.5rem 0 rgba(global.$color-gray, 0.5);
-
-          img {
-            filter: blur(0);
-          }
-        }
-
-        &:nth-child(3) {
-          transform: translateX(70%) scale(80%);
-        }
+        box-shadow: 0 1rem 1rem 0 rgba(global.$color-gray, 1);
 
         img {
           width: 100%;
