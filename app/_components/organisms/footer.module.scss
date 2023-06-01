@@ -10,6 +10,10 @@
     padding: 6rem 5rem;
   }
 
+  @media (max-width: global.$break-s) {
+    padding: 3rem 2rem;
+  }
+
   strong {
     color: global.$color-primary;
   }
@@ -26,6 +30,10 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.6rem;
+
+      @media (max-width: global.$break-s) {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       li {
         font-size: 1.4rem;

@@ -35,6 +35,10 @@
       margin: auto;
     }
 
+    @media (max-width: global.$break-xs) {
+      height: 20rem;
+    }
+
     img {
       width: auto;
       height: 100%;

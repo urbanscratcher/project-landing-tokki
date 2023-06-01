@@ -2,6 +2,9 @@
 
 .faq {
   border-bottom: 1px solid global.$color-base-tint-3;
+  @media (max-width: global.$break-m) {
+    width: 90vw;
+  }
 
   div {
     @include global.flex-row-center(0);

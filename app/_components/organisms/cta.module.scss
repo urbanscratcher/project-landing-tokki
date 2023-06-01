@@ -69,8 +69,14 @@
         padding: 1.5rem 1.5rem 1.5rem 5rem;
         color: #fff;
         background-color: rgba(#000, 0.2);
-        width: 45rem;
-        min-width: 35rem;
+        width: 40rem;
+
+        @media (max-width: global.$break-m) {
+          width: 60vw;
+        }
+        @media (max-width: global.$break-s) {
+          width: 85vw;
+        }
 
         &:focus {
           outline: none;

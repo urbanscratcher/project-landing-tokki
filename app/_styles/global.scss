@@ -12,6 +12,7 @@ $break-l: 1100px;
 $break-m: 900px;
 $break-sm: 700px;
 $break-s: 600px;
+$break-xs: 400px;
 
 @mixin container {
   max-width: 125rem;

@@ -33,6 +33,10 @@
           width: 50rem;
         }
 
+        @media (max-width: global.$break-s) {
+          width: 28rem;
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -93,6 +97,10 @@
       padding: 1rem;
       cursor: pointer;
 
+      @media (max-width: global.$break-s) {
+        padding: 0.6rem;
+      }
+
       &.highlighted {
         div {
           border-color: global.$color-base;
@@ -114,6 +122,11 @@
         height: 1.6rem;
         border-radius: 5rem;
         border: 0.2rem solid global.$color-base-tint-1;
+
+        @media (max-width: global.$break-s) {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
       }
 
       &:hover div {

@@ -4,7 +4,6 @@
   font-size: 4.2rem;
   text-align: center;
   margin: 1rem;
-  margin-left: auto;
   color: rgba(global.$color-gray, 0.8);
   width: 5rem;
   height: 5rem;
@@ -45,7 +44,9 @@
   }
 
   ul {
-    background-color: rgba(#fff, 0.95);
+    background-color: rgba(#fff, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     transition: all 0.3s;
     font-weight: bold;
     padding: 3.5rem;
