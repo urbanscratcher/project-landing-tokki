@@ -1,1 +1,1 @@
-project-landing-tokki.vercel.app
+http://www.project-landing-tokki.vercel.app
