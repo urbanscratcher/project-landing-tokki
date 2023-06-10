@@ -1,1 +1,1 @@
-https://vercel.com/urbanscratcher/project-tokki
+project-landing-tokki.vercel.app
