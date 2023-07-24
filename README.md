@@ -23,6 +23,7 @@ https://project-landing-tokki.vercel.app
     - 그렇지만 스타일의 변수 및 함수화가 가능하고, nested 구조로 깔끔하게 작성이 가능해서 순수 CSS보다 사용이 편리했습니다.
 - 프레임워크: Nextjs 13
   - 랜딩 페이지용으론 당연히 필요하진 않지만, 맛보기로 Nextjs에 대해 공부하고, 13버전의 Image Optimization에 대해서도 알고 싶어 사용해 보았습니다.
+- 배포: Vercel
 
 ## 피그마 링크
 https://www.figma.com/file/0MKWzzPJg3VToNgVaSROHB/%5BProject%5D-Landing-Page---Tokki-Soju?type=design&node-id=2203%3A104&mode=design&t=A7s7zEhXK9P8PSh6-1
