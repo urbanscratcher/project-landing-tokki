@@ -20,10 +20,7 @@ This landing page is the first one I created after diving into CSS and HTML in d
 
 ## Demo
 
-<video controls>
-  <source src="https://github.com/urbanscratcher/project-landing-tokki/assets/17016494/d2e8502a-232d-4b69-8b6d-13b75f0a5b6a" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<video src="https://github.com/urbanscratcher/project-landing-tokki/assets/17016494/d2e8502a-232d-4b69-8b6d-13b75f0a5b6a" controls></video>
 
 [Link to the Site](https://project-landing-tokki.vercel.app)
 
