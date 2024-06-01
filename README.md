@@ -1,33 +1,72 @@
+# Landing Page
 
-# Tokki Soju Landing Page
+March 2023
 
-## Introduction
-This is a one-page landing page created as the first project after thoroughly learning CSS and HTML.
+This landing page is the first one I created after diving into CSS and HTML in detail. It was inspired by a PDF brochure of 'Tokki Soju,' a brand I admire. Here's a breakdown of its features:
 
-## Link
-https://project-landing-tokki.vercel.app
+## Features
 
-## Figma
-[https://www.figma.com/file/0MKWzzPJg3VToNgVaSROHB/%5BProject%5D-Landing-Page---Tokki-Soju?type=design&node-id=2203%3A104&mode=design&t=A7s7zEhXK9P8PSh6-1](https://www.figma.com/file/tXAVttydu8o7QMzKN9w8sa/%5BProject%5D-Landing-page---Tokki-Soju?type=design&node-id=0%3A1&mode=design&t=EZQRcnwatLZmOPdK-1)
+- **Diverse Landing Page Patterns**: Implemented various landing page patterns including hero sections, feature lists, Z-patterns, testimonial sections, carousel galleries, FAQs, and CTA forms.
+- **Carousel Slide**: Introduced a carousel slide feature allowing users to easily view multiple images. Transition effects with blurred images were applied for smooth navigation, and circular buttons below enable users to navigate to specific slides.
+- **Modal Window**: Utilized a modal window for displaying detailed product information. When users click on the product details button, a modal window appears, and clicking outside the window closes it.
+- **Responsive Design**: Ensured responsiveness across various devices. On mobile screens, the header menu automatically transforms into a mobile menu.
 
-## Libraries & Technologies
-- Implementation: HTML, CSS (SASS), TypeScript
-  - Used SASS in the form of CSS modules
-  - Used BEM naming convention to compare with TailwindCSS, Bootstrap, etc.
-    - In conclusion, breaking down into components led to too much fine-grained division, which was inefficient.
-    - However, it was more convenient than pure CSS because it allows styling with variables and functions and writing in a nested structure.
-- Framework: Next.js 13
-  - Although not necessary for a landing page, I used it to study Next.js and learn about the Image Optimization in version 13.
-- Deployment: Vercel
+## Technical Focus
 
-## Development Process
-- Discovered a PDF brochure of the favorite brand 'Tokki Soju' and used it as a basis to create the landing page.
-- Focused on implementing various patterns that appear on landing pages in different sections rather than special features.
-- The skeleton was constructed using UI kits in Figma, and fonts and primary colors were chosen to match the brand's character.
-- Even though it was an overspec for a personal project, I used various technologies I wanted to learn. Due to the lack of restrictions and simple tasks, I was able to experiment a lot.
-- This project helped me get familiar with CSS and HTML structuring, but the tricky parts were the Carousel Slide, modal implementation, and mobile menu transformation.
-- In terms of absolute amount, I spent the most time on design considerations. Even when working alone, separating design (planning) and coding processes seems more efficient than coding while designing.
-- While studying Atomic Design, I tried dividing components into atoms, molecules, organisms, etc., but it was not very intuitive. Dividing into presentational components and functional components seemed better.
+- Focused on implementing various patterns rather than specialized functionalities.
+- Utilized a UI kit from Figma for initial design wireframing, selecting fonts, and primary colors based on the brand's characteristics.
+- Employed BEM naming conventions and structured CSS using SCSS in a CSS module format.
+- Although Next.js may not be the ideal choice for a landing page, it was utilized to wrap the project as a means of learning the framework.
 
-## Personal Contribution
-100%
+## Demo
+
+[Link to the Site](https://project-landing-tokki.vercel.app)
+
+## Tech Stack
+
+### Frontend
+
+- **Framework**: Next.js 13
+- **Language**: TypeScript
+- **Styling**: SCSS
+
+### Backend
+
+- None
+
+### Database
+
+- None
+
+### Development Environment
+
+- **Source Code**: GitHub
+- **Package Management**: pnpm
+
+### Cloud Services & Deployment
+
+- **Hosting & Deployment**: Vercel
+
+## Design Process
+
+1. Examined the brochure file of the brand and determined the content to include.
+
+2. Conceptualized various patterns to incorporate.
+
+<video src="https://github.com/urbanscratcher/project-landing-tokki/assets/17016494/ff1059fc-fd03-4e0a-a0bf-608280f427aa" controls></video>
+
+3. Selected product-specific colors and adjusted content accordingly.
+
+<video src="https://github.com/urbanscratcher/project-landing-tokki/assets/17016494/5465da04-633f-4579-90fe-14131326aa50" controls></video>
+
+[Figma Link](https://www.figma.com/design/tXAVttydu8o7QMzKN9w8sa/%5BProject%5D-Landing-page---Tokki-Soju?node-id=0-1&t=NNSwLCldMbakCyl1-1)
+
+---
+
+## Reflection
+
+- The technology stack might have been somewhat excessive compared to the project's goals. Nevertheless, it provided an opportunity to learn and experiment with new technologies.
+- Deepened my understanding of CSS and HTML structures significantly. Overcoming challenges such as carousel slides, modal window implementation, and mobile menu transformation taught me a great deal.
+- Spent considerable time on design considerations. Found that prioritizing design and planning before coding was more efficient, even for solo projects.
+- Delved into Atomic Design, although it wasn't entirely intuitive. Realized that dividing components into dummy and functional components at the project's outset might be a more effective approach.
+- Noticed that BEM naming and SCSS usage allowed for cleaner and more structured code compared to plain CSS, enhancing code organization and maintenance.
